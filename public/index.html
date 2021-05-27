@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/public/js/index.js"></script>
+    <link rel="stylesheet" href="/public/css/index.css" />
+  </head>
+  <body>
+    <div class="charts-container">
+      <div class="chart-holder">
+        <canvas class="data-chart" id="thrust-chart"></canvas>
+      </div>
+      <div class="chart-holder">
+        <canvas class="data-chart" id="temp-chart"></canvas>
+      </div>
+      <div class="chart-holder">
+        <canvas class="data-chart" id="speed-chart"></canvas>
+      </div>
+      <div class="chart-holder">
+        <canvas class="data-chart" id="gas-chart"></canvas>
+      </div>
+      <div class="chart-holder">
+        <canvas class="data-chart" id="comb-chart"></canvas>
+      </div>
+      <script>
+        load_charts();
+      </script>
+      <button onclick="start_end_session()">Start/End Session</button>
+      <h1 id="status-head">Current status: NOT SAVING</h1>
+    </div>
+    <button onclick="on_tare_click()">Tare Scale</button>
+  </body>
+</html>
